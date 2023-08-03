@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univarsity Website | Blog Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <!-- ----- Header Section Start ----- -->
+    <section class="sub-header">
+        <nav>
+            <a href=""><img class="logo" src="images/logo.png" alt=""></a>
+            
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-page.html">About</a></li>
+                    <li><a href="course-page.html">Course</a></li>
+                    <li><a href="blog-page.html">Blog</a></li>
+                    <li><a href="contact-page.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Our Certificate & Online Programs For 2023</h1>
+    </section>
+    <!-- ----- Header Section Ends ----- -->
+
+
+    <!-- ----- Blog Page Section Start ----- -->
+    <section class="blogSection">
+        <div class="row">
+            <div class="blogLeft">
+                <img src="images/certificate.jpg" alt="Image">
+                <h2>Our Certificate & Online Programs For 2023</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur magnam provident quos, aliquid, optio mollitia amet pariatur officiis deserunt labore temporibus? Maiores expedita blanditiis soluta maxime quia magnam, voluptas aspernatur.</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis amet quisquam autem exercitationem minima optio culpa minus quaerat quos a perferendis facere inventore ipsam quo beatae, reiciendis quod omnis fugiat, recusandae quibusdam reprehenderit cum, ad impedit doloribus! Expedita vitae id molestiae nesciunt illum officiis omnis, possimus hic commodi nostrum soluta mollitia qui, modi ut ex consectetur laudantium ipsum? Eos, temporibus?</p>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptatum velit perspiciatis minima necessitatibus, suscipit nam odio quibusdam error quisquam distinctio, ut unde aliquid quis atque sunt, voluptatem esse voluptas aliquam porro nulla explicabo! Inventore facilis ut voluptatem. Qui cumque inventore nihil perspiciatis ut illum eveniet quas corporis ratione earum? Enim ea quis officiis commodi sapiente repellat, ad nobis fugiat saepe aliquid et expedita doloribus debitis ratione dignissimos tempora alias!</p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit totam cupiditate consequatur debitis facilis ipsa modi beatae veritatis, ex, libero laudantium praesentium, voluptates minima! Asperiores itaque dolore voluptatibus ex dignissimos est aut exercitationem quas adipisci aperiam, reiciendis hic eos?</p>
+
+
+                <div class="commentBox">
+
+                    <h3>Leave a comment</h3>
+    
+                    <form class="commentForm">
+                        <input type="text" placeholder="Enter Name">
+                        <input type="email" placeholder="Enter Email">
+                        <textarea rows="5" placeholder="Your Comment"></textarea>
+                        <button type="submit" class="btn red-btn">POST COMMENT</button>
+                    </form>
+    
+                </div>
+
+            </div>
+
+
+            <div class="blogRight">
+                <h3>Post Categories</h3>
+
+                <div>
+                    <span>Business Analytics</span>
+                    <span>21</span>
+                </div>
+
+                <div>
+                    <span>Data Science</span>
+                    <span>28</span>
+                </div>
+
+                <div>
+                    <span>Machine Learning</span>
+                    <span>15</span>
+                </div>
+
+                <div>
+                    <span>Computer Science</span>
+                    <span>34</span>
+                </div>
+
+                <div>
+                    <span>AutoCAD</span>
+                    <span>42</span>
+                </div>
+
+                <div>
+                    <span>Journalism</span>
+                    <span>22</span>
+                </div>
+
+                <div>
+                    <span>Commerce</span>
+                    <span>30</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ----- Blog Page Section Ends ----- -->
+    
+
+
+
+    <!-- ----- Footer Section Start ----- -->
+    <footer class="footerSection">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quos quidem ex magni <br> vitae suscipit aspernatur, pariatur doloremque culpa quis.</p>
+
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <span>Copyright &copy; 2023 By Maruf Ahmed | All Rights Reserved.</span>
+        <a href="https://www.facebook.com/marufahmed8090" class="dev-con" target="_blank">Developer Contact</a>
+    </footer>
+    <!-- ----- Footer Section Ends ----- -->
+
+
+
+
+
+
+    <!-- Javascript for toggle Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

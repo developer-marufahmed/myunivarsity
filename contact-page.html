@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univarsity Website | Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Favicon link -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+    <!-- ----- Header Section Start ----- -->
+    <section class="sub-header">
+        <nav>
+            <a href=""><img class="logo" src="images/logo.png" alt=""></a>
+            
+            <div class="nav-links" id="navLinks">
+
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-page.html">About</a></li>
+                    <li><a href="course-page.html">Course</a></li>
+                    <li><a href="blog-page.html">Blog</a></li>
+                    <li><a href="contact-page.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+        <h1>Contact Us</h1>
+    </section>
+    <!-- ----- Header Section Ends ----- -->
+
+
+    <!-- ----- Location Section Start ----- -->
+    <section class="locationSection">
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5671991.996944717!2d85.04365074131151!3d23.427102776466192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30adaaed80e18ba7%3A0xf2d28e0c4e1fc6b!2sBangladesh!5e1!3m2!1sen!2sbd!4v1690984635728!5m2!1sen!2sbd" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+    </section>
+    <!-- ----- Location Section Ends ----- -->
+
+
+    <!-- ----- Contact us Section Start ----- -->
+    <section class="contactUsSection">
+        <h1 class="info">Contact <span>Info</span></h1>
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <span>
+                        <h5>XYZ Road, ABC Building</h5>
+                        <p>Dhaka, Bangladesh.</p>
+                    </span>
+                </div>
+
+                <div>
+                    <i class="fas fa-phone"></i>
+                    <span>
+                        <h5>+880 1310-599680</h5>
+                        <p>Monday to Sunday, 10AM to 6PM</p>
+                    </span>
+                </div>
+                
+                <div>
+                    <i class="fas fa-envelope"></i>
+                    <span>
+                        <h5>info@yourwebsite.com</h5>
+                        <p>Monday to Sunday, 10AM to 6PM</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+
+                <form action="form-hendler.php" method="post">
+
+                    <input type="text" name="name" placeholder="Enter your name" class="input-box" autocomplete="off" required>
+                    <input type="email" name="email" placeholder="Enter your email" class="input-box" autocomplete="off" required>
+                    <input type="text" name="subject" placeholder="Enter your subject" class="input-box" autocomplete="off" required>
+                    <textarea name="message" id="" rows="8" class="input-box message" placeholder="Message" autocomplete="off" required></textarea>
+                    <button type="submit" class="btn red-btn">Sent Message</button>
+    
+                </form>
+
+            </div>
+        </div>
+    </section>
+    <!-- ----- Contact us Section Ends ----- -->
+    
+
+
+
+    <!-- ----- Footer Section Start ----- -->
+    <footer class="footerSection">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus quos quidem ex magni <br> vitae suscipit aspernatur, pariatur doloremque culpa quis.</p>
+
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <span>Copyright &copy; 2023 By Maruf Ahmed | All Rights Reserved.</span>
+        <a href="https://www.facebook.com/marufahmed8090" class="dev-con" target="_blank">Developer Contact</a>
+    </footer>
+    <!-- ----- Footer Section Ends ----- -->
+
+
+
+
+
+
+    <!-- Javascript for toggle Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
